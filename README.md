@@ -1,5 +1,9 @@
 # Recrystal
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22920257.svg)](https://doi.org/10.5281/zenodo.22920257)
+[![PyPI](https://img.shields.io/pypi/v/recrystal.svg?label=pypi)](https://pypi.org/project/recrystal/)
+[![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+
 A layout parser for research papers: PDF in, ordered typed blocks out.
 
 ```
