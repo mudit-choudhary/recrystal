@@ -1,4 +1,4 @@
-# recrystal
+# Recrystal
 
 A layout parser for research papers: PDF in, ordered typed blocks out.
 
