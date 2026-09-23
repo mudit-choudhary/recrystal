@@ -1,0 +1,17 @@
+Copyright 2026 Mudit Choudhary <https://orcid.org/0009-0003-8880-0925>
+
+A layout parser for research papers: fine-tuned YOLO11 layout detection over
+PDFs, assembled into ordered, typed blocks.
+
+Developed and evaluated in the Anneal project:
+https://github.com/mudit-choudhary/Anneal
+
+Licensed under the GNU Affero General Public License, version 3 or later, for
+two independent reasons:
+  - it links PyMuPDF (AGPL-3.0) to extract the words matched to each region;
+  - the layout weights are fine-tuned from Ultralytics YOLO11 (AGPL-3.0) and
+    are a derivative work. They are distributed separately, under AGPL-3.0,
+    at https://huggingface.co/darkdwine/yolo11-doc-layout-research-papers
+
+Assembly is done by textreflow (Apache-2.0),
+https://github.com/mudit-choudhary/textreflow

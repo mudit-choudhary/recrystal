@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Recrystal: A Layout Parser for Research Papers"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Choudhary
+    given-names: Mudit
+    orcid: "https://orcid.org/0009-0003-8880-0925"
+repository-code: "https://github.com/mudit-choudhary/recrystal"
+url: "https://github.com/mudit-choudhary/recrystal"
+abstract: >-
+  Parses research-paper PDFs into ordered, typed blocks: a YOLO11 layout
+  detector fine-tuned on 12 research-paper classes finds the regions, PyMuPDF
+  supplies the words, and textreflow rebuilds reading order and paragraphs.
+  In a pre-registered evaluation over 514 papers and 400 questions it lost 24
+  answer spans in parsing against Docling's 48 and PyMuPDF4LLM's 61, and
+  parsed 2.88x faster per page than Docling on a 4 GB consumer GPU.
+keywords:
+  - document parsing
+  - layout analysis
+  - research papers
+  - retrieval-augmented generation
+license: AGPL-3.0-or-later
+version: 1.0.0

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recrystal"
+version = "1.0.0"
+description = "A layout parser for research papers: fine-tuned YOLO11 layout detection over PDFs, assembled into ordered, typed blocks."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Mudit Choudhary" }]
+keywords = ["pdf", "document-parsing", "layout-analysis", "yolo", "rag", "research-papers"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: General",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+# Plain onnxruntime on purpose: onnxruntime and onnxruntime-gpu share one
+# package directory, so whichever installs last wins. GPU users take the extra.
+dependencies = [
+    "pymupdf",
+    "onnxruntime",
+    "numpy",
+    "opencv-python-headless",
+    "textreflow>=1.0",
+]
+
+[project.optional-dependencies]
+gpu = ["onnxruntime-gpu"]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/mudit-choudhary/recrystal"
+Weights = "https://huggingface.co/darkdwine/yolo11-doc-layout-research-papers"
+Evaluation = "https://github.com/mudit-choudhary/Anneal/blob/main/evals/Reports/Report.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
