@@ -36,6 +36,7 @@ test = ["pytest>=7"]
 
 [project.urls]
 Homepage = "https://github.com/mudit-choudhary/recrystal"
+DOI = "https://doi.org/10.5281/zenodo.22920257"
 Weights = "https://huggingface.co/darkdwine/yolo11-doc-layout-research-papers"
 Evaluation = "https://github.com/mudit-choudhary/Anneal/blob/main/evals/Reports/Report.md"
 

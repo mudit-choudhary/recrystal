@@ -84,4 +84,7 @@ link neither and are Apache-2.0.
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff).
+Archived on Zenodo: [10.5281/zenodo.22920257](https://doi.org/10.5281/zenodo.22920257)
+(concept DOI, always the latest version; v1.0.0 is
+[10.5281/zenodo.22920258](https://doi.org/10.5281/zenodo.22920258)). Metadata in
+[CITATION.cff](CITATION.cff).

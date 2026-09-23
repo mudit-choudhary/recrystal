@@ -3,6 +3,8 @@ Copyright 2026 Mudit Choudhary <https://orcid.org/0009-0003-8880-0925>
 A layout parser for research papers: fine-tuned YOLO11 layout detection over
 PDFs, assembled into ordered, typed blocks.
 
+DOI: https://doi.org/10.5281/zenodo.22920257
+
 Developed and evaluated in the Anneal project:
 https://github.com/mudit-choudhary/Anneal
 
